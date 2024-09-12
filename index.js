@@ -57,7 +57,7 @@ const metasRealizadas = async () => {
     }
 
     await select({
-        message: "Metas Realizadas " + "Total de metas relizadas: " realizadas.length,
+        message: "Metas Realizadas | Total de metas realizadas:" + realizadas.length,
         choices: [...realizadas]
     })
 }
@@ -73,7 +73,7 @@ const metasAbertas = async () => {
     }
 
     await select({
-        message: "Metas Abertas " + "Total de metas abertas:" abertas.length,
+        message: "Metas Abertas | Total de metas abertas: " + abertas.length,
         choices: [...abertas]
     })
 }
